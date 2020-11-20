@@ -1,14 +1,77 @@
 mrmlnc.vscode-scss
-* {
-    font-family: sans-serif;
-    font-size: 1.3em;
+/*# sourceMappingURL=style.css.map */
 
-}
-
-.instructions {
+.homepage_container {
     display: flex;
-    flex-flow: row wrap;
+    flex-grow: 1;
+    
+
+   
+}
+.grid {
+    display: flex;
     align-content: space-around;
+    flex-grow: 1;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.restaurants {
+    font-family: raleway;
+    font-size: 4 rem;
+    font-weight: bold;
+    font-size: 4 rem;
+    font-weight: bold;
+    padding: 1rem 1rem;
+    
 }
 
+/* restaurant section 
+to do :
+-fit restaurant picture to flex item  .rest-prev --resize image?? "overflow:hidden" 
 
+-shortten img src link/filepath length? */
+
+
+.rest-prev {
+    display: flex;
+    flex-flow: column wrap;
+    border: solid;
+    width: 21rem;
+    height: 16rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    flex-grow: 1;
+    
+    
+
+}
+.rest-prev-top {
+  font-family: raleway; 
+}
+
+#rest-image {
+    width: 337px;
+    height:174px;
+
+}
+.rest-prev-top__image {
+    width: 337px;
+    height:174px;
+    
+
+}
+.rest-prev-bottom {
+    font-family: raleway;
+
+}
+.rest-prev-bottom__header {
+
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: left; 
+       
+}
+.rest-prev-bottom__byline {
+    font-size: 1.3rem;
+    text-align: left;
+}
