@@ -1,11 +1,26 @@
-@charset "UTF-8";
+/*@mixin mixin-name {
+    css-property: value;
+}*/
 .homepage_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
+  max-width: 450px;
+  /*Header Section */
+}
+
+.homepage_container .header {
+  display: flex;
+  flex-direction: column;
+}
+
+.homepage_container .header__logo {
+  align-content: center;
+}
+
+.homepage_container .header__location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .grid {
@@ -31,32 +46,24 @@ to do :
 
 -shortten img src link/filepath length? */
 .rest-prev {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+  flex-flow: column wrap;
   border: solid;
   width: 21rem;
   height: 16rem;
   border-radius: 1.5rem;
   overflow: hidden;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
 }
 
 .rest-prev-top__background-img {
   width: 337px;
   height: 174px;
-  background-image: url("C:UsersJÞsktopgitprojectsOhmyfood\assetsProjet+3+-+ohmyfood+ENProjet 3 - ohmyfood ENimagesrestaurantsjay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
 
 .rest-prev-top__new-label {
-  color: 99E2D0;
-  fill: 99E2D0;
+  /*color:$new-label-color;
+            fill: $new-label-color;*/
   border: 1px;
   border-radius: 1rem;
 }
@@ -77,8 +84,7 @@ to do :
 }
 
 .rest-prev-bottom__heart-button {
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  border: 0;
+  justify-content: flex-start;
 }
 /*# sourceMappingURL=main.css.map */

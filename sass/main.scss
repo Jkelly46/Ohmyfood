@@ -1,27 +1,54 @@
 mrmlnc.vscode-scss
 /*# sourceMappingURL=style.css.map */
 
+{$new-label-color: #99E2D0;}
+
+/*@mixin mixin-name {
+    css-property: value;
+}*/
+@mixin heading-text {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem 0rem;
+}
+
 .homepage_container {
     display: flex;
     flex-grow: 1;
+    max-width: 450px;
     
+/*Header Section */
 
+.header {
+    display:flex;
+    flex-direction: column;
+        
+    &__logo {
+        align-content: center;
+
+        }
+    &__location {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
    
 }
 .grid {
-    display: flex;
+    /*display: flex;
     align-content: space-around;
     flex-grow: 1;
     flex-flow: column wrap;
     justify-content: center;
+    flex-basis:  fit-content; */
+    background-color: #f6f6f6;
+    
 }
 .restaurants {
-    font-family: raleway;
-    font-size: 4 rem;
-    font-weight: bold;
-    font-size: 4 rem;
-    font-weight: bold;
-    padding: 1rem 1rem;
+    @include heading-text;
+    
     
 }
 
@@ -45,33 +72,43 @@ to do :
     
 
 }
-.rest-prev-top {
-  font-family: raleway; 
-}
+.rest-prev-top { 
+  
+        &__background-img {
+                width: 337px;
+                height:174px;
+                
+        
 
-#rest-image {
-    width: 337px;
-    height:174px;
-
-}
-.rest-prev-top__image {
-    width: 337px;
-    height:174px;
+        }
+        &__new-label {
+            /*color:$new-label-color;
+            fill: $new-label-color;*/
+            
+            border:1px;
+            border-radius: 1rem;
+        }
     
-
 }
+
+
 .rest-prev-bottom {
-    font-family: raleway;
+    background-color: #fff;
+    &__header {
 
-}
-.rest-prev-bottom__header {
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-align: left; 
+           
+    }
+    &__byline {
+        font-size: 1.3rem;
+        text-align: left;
+    }
+    &__heart-button {
+        border: 0;
+        justify-content: flex-start;
+        
 
-    font-size: 1.3rem;
-    font-weight: bold;
-    text-align: left; 
-       
-}
-.rest-prev-bottom__byline {
-    font-size: 1.3rem;
-    text-align: left;
+    }
 }
