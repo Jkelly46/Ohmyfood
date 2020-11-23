@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jkelly46/Ohmyfood.git"
+  },
+  "keywords": [
+    "ohmyfood"
+  ],
+  "author": "John Henry Kelly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jkelly46/Ohmyfood/issues"
+  },
+  "homepage": "https://github.com/Jkelly46/Ohmyfood#readme"
+}

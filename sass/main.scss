@@ -3,21 +3,21 @@ mrmlnc.vscode-scss
 
 {$new-label-color: #99E2D0;}
 
-/*@mixin mixin-name {
-    css-property: value;
-}*/
+
+
 @mixin heading-text {
-    font-family: sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
-    padding: 1rem 0rem;
+    padding: 2rem .5rem;
 }
 
 .homepage_container {
     display: flex;
-    flex-grow: 1;
-    max-width: 450px;
+    flex-direction: column;
     
+    max-width: 450px;
+}
 /*Header Section */
 
 .header {
@@ -35,6 +35,25 @@ mrmlnc.vscode-scss
     }
 }
    
+.instructions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    &__step {
+        background-color:#f6f6f6;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 2rem 1rem;
+        border-radius: 5rem;
+            &--tinted {
+                background-color: rgb(212, 151, 212);
+            }
+
+    }
+}
+.instructions__heading {
+    @include heading-text;
 }
 .grid {
     /*display: flex;
@@ -90,8 +109,6 @@ to do :
         }
     
 }
-
-
 .rest-prev-bottom {
     background-color: #fff;
     &__header {
