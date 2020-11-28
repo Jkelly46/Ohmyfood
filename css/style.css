@@ -10,19 +10,42 @@
   display: flex;
   flex-direction: column;
   align-content: center;
+  background-color: #f6f6f6;
 }
 .header__logo {
   width: 10rem;
   height: 2rem;
-  align-content: center;
 }
 .header__location {
   display: flex;
   flex-direction: row;
   align-content: center;
+  background-color: #EAEAEA;
+  padding: 1rem 1rem;
 }
 
-.instructions__heading {
+.explore {
+  align-content: center;
+  font-family: "Roboto", sans-serif;
+}
+.explore__byline {
+  padding: 1rem;
+}
+.explore__button {
+  border-radius: 5rem;
+  border: solid;
+  padding: 1rem;
+}
+
+.header__heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 2rem 0.5rem;
+}
+
+/*instructions */
+.heading {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
@@ -33,12 +56,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 3rem 0rem;
 }
 .instructions__step {
   background-color: #f6f6f6;
   display: flex;
-  flex-direction: row;
   justify-content: flex-start;
   padding: 2rem 1rem;
   border-radius: 5rem;
@@ -58,7 +79,7 @@
   padding: 3rem 0rem;
 }
 
-.restaurants {
+.header__heading {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
