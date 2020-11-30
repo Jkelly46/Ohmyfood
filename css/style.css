@@ -54,8 +54,8 @@
 
 .instructions {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
-  justify-content: space-around;
 }
 .instructions__step {
   background-color: #f6f6f6;
@@ -94,35 +94,45 @@
   height: 16rem;
   border-radius: 1.5rem;
   overflow: hidden;
-  flex-grow: 1;
 }
 
-.rest-prev-top__background-img {
+.rest-prev {
+  position: relative;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.rest-prev__img {
   width: 337px;
   height: 174px;
 }
-.rest-prev-top__new-label {
-  /*color:$new-label-color;
-  fill: $new-label-color;*/
-  border: 1px;
-  border-radius: 1rem;
+.rest-prev__new-label {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  color: #99E2D0;
+  background-color: #179978;
+  padding: 0.5rem;
+  border-radius: 3rem;
 }
-
-.rest-prev-bottom {
-  background-color: #fff;
-}
-.rest-prev-bottom__header {
+.rest-prev__header {
   font-size: 1.3rem;
   font-weight: bold;
-  text-align: left;
+  position: absolute;
+  bottom: 35px;
+  left: 16px;
 }
-.rest-prev-bottom__byline {
+.rest-prev__byline {
   font-size: 1.3rem;
-  text-align: left;
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
 }
-.rest-prev-bottom__heart-button {
+.rest-prev__heart-button {
   border: 0;
   justify-content: flex-start;
+  position: absolute;
+  bottom: 25px;
+  right: 16px;
 }
 
 .footer {
