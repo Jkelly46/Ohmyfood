@@ -3,6 +3,7 @@ mrmlnc.vscode-scss
 
 {$new-label-color: #99E2D0;}
 $background-color: #f6f6f6;
+$number-color: #9356DC;
 $text-font: 'Roboto', sans-serif;
 $title-font: 'Shrikhand', cursive;
 
@@ -27,6 +28,7 @@ $title-font: 'Shrikhand', cursive;
     background-color: $background-color; 
     text-align: center;
     font-family: $text-font;
+    margin-bottom: 6rem;
             &__logo {
                 width: 30rem;
                 height: 5rem;
@@ -92,7 +94,45 @@ $title-font: 'Shrikhand', cursive;
     font-family: $text-font;
     font-size: 2.5rem;
     
-    
+    &__number1 {
+        color: white;
+        position: absolute;
+        top: 58%;
+        left: 6%;
+        transform: translate(-50%, -50%);
+        background-color: $number-color;
+        width: 3.5rem;
+        text-align: center;
+        line-height: 3.5rem;
+        font-size: 1.4rem;
+        border-radius: 50%;
+    }
+    &__number2 {
+        color: white;
+        position: absolute;
+        top: 70%;
+        left: 6%;
+        transform: translate(-50%, -50%);
+        background-color: $number-color;
+        width: 3.5rem;
+        text-align: center;
+        line-height: 3.5rem;
+        font-size: 1.4rem;
+        border-radius: 50%;
+    }
+    &__number3 {
+        color: white;
+        position: absolute;
+        top: 81%;
+        left: 5%;
+        transform: translate(-50%, -50%);
+        background-color: $number-color;
+        width: 3.5rem;
+        text-align: center;
+        line-height: 3.5rem;
+        font-size: 1.4rem;
+        border-radius: 50%;
+    }
     &__step {
         background-color: $background-color;
         display: flex;
@@ -107,7 +147,8 @@ $title-font: 'Shrikhand', cursive;
     }
 }
 .fas {
-    padding-left: 1rem;
+    padding-left: 5rem;
+    padding-right: 2rem;
 
 }
 .button-text {
@@ -197,16 +238,27 @@ $title-font: 'Shrikhand', cursive;
     color: white;
     background-color: #332E2C;
     font-size: 1rem;
-    padding: 1rem 0rem;
-        &__item {
-            font-family: $text-font;
-        }
+    padding-bottom: 5rem;
+    
+    .footer__item {
+        font-family: $text-font;
+        font-size:3rem;
+        margin: 1rem 4rem;
+    } 
+        
     
         
 }
+
+.footer-icon {
+    padding-left: 0rem;
+}
 .i {
     padding-right: 1rem;
+    padding-left: 1rem;
 }
 .logo {
     font-family: $title-font;
+    font-size: 3rem;
+    margin: 3rem 0rem 3rem 4rem;
 }
