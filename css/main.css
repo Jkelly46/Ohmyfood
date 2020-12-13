@@ -9,14 +9,14 @@
   background-color: #f6f6f6;
   text-align: center;
   font-family: "Roboto", sans-serif;
-  margin-bottom: 6rem;
 }
 
 .header__logo {
   width: 30rem;
   height: 5rem;
-  margin-right: 1rem;
-  padding: 2rem 0rem;
+  margin: 0rem;
+  padding: 2rem 15rem;
+  box-shadow: 0px 10px 19px  #cbcbcb;
 }
 
 .header__location {
@@ -24,7 +24,7 @@
   flex-direction: row;
   justify-content: center;
   background-color: #EAEAEA;
-  padding: 2rem 0rem;
+  padding: 2rem 10rem 2rem 0rem;
   font-size: 2.5rem;
   font-weight: 600;
   color: #424141;
@@ -41,7 +41,7 @@
   align-content: center;
   font-family: "Roboto", sans-serif;
   font-size: 2.5rem;
-  margin: 2rem 4rem 8rem 4rem;
+  margin: 0rem 4rem 8rem 4rem;
 }
 
 .explore__byline {
@@ -51,24 +51,27 @@
 
 .explore__button {
   border-radius: 5rem;
-  border: solid;
-  padding: 2rem 0rem;
-  margin: 0rem 11rem;
+  border: none;
+  padding: 2rem 3rem;
+  margin: 0rem 9rem;
   color: white;
-  background-color: #b358b3;
+  background: linear-gradient(to bottom right, #e671da 0%, #aa5ddb 100%);
+  box-shadow: 2px 10px 19px 3px #cbcbcb;
 }
 
 .homepage-heading {
   font-family: "Roboto", sans-serif;
   font-size: 4rem;
   font-weight: 700;
-  padding: 2rem .5rem;
-  margin: 0rem 1rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin-left: 3rem;
 }
 
 .homepage-heading--restaurants {
   background-color: #f6f6f6;
   margin: 0rem;
+  padding-left: 3rem;
 }
 
 /*instructions */
@@ -130,6 +133,7 @@
   padding: 4rem 12rem 5rem 0rem;
   margin: 1.5rem 3rem;
   border-radius: 3rem;
+  box-shadow: 2px 10px 19px 3px #cbcbcb;
 }
 
 .fas {
@@ -146,7 +150,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #f6f6f6;
-  padding: 1rem 0rem;
+  padding-bottom: 10rem;
 }
 
 .rest-prev {
@@ -154,12 +158,14 @@
   text-align: center;
   font-family: "Roboto", sans-serif;
   display: flex;
-  flex-flow: column wrap;
-  border: solid;
+  flex-direction: column;
+  border: none;
   width: 55rem;
   height: 40rem;
   border-radius: 1.5rem;
   overflow: hidden;
+  box-shadow: 2px 10px 19px 3px #cbcbcb;
+  margin-bottom: 3rem;
 }
 
 .rest-prev__img {
@@ -167,8 +173,13 @@
   height: 435px;
 }
 
+.rest-prev__img--shortened {
+  width: 900px;
+  height: 435px;
+}
+
 .rest-prev__new-label {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   position: absolute;
   top: 8px;
@@ -177,9 +188,9 @@
   background-color: #99E2D0;
   width: 13rem;
   height: 3rem;
-  padding: .5rem;
-  border-radius: 2rem;
-  padding-top: .5rem;
+  padding: 1rem;
+  border-radius: .5rem;
+  text-align: center;
 }
 
 .rest-prev__header {

@@ -1,5 +1,5 @@
 mrmlnc.vscode-scss
-/*# sourceMappingURL=style.css.map */
+
 
 {$new-label-color: #99E2D0;}
 $background-color: #f6f6f6;
@@ -15,7 +15,9 @@ $title-font: 'Shrikhand', cursive;
     font-family: $text-font;
     font-size: 4rem;
     font-weight: 700;
-    padding: 2rem .5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-left: 3rem;
 }
 
 .homepage-container {
@@ -30,7 +32,7 @@ $title-font: 'Shrikhand', cursive;
     background-color: $background-color; 
     text-align: center;
     font-family: $text-font;
-    margin-bottom: 6rem;
+    
             &__logo {
                 width: 30rem;
                 height: 5rem;
@@ -45,7 +47,7 @@ $title-font: 'Shrikhand', cursive;
                 flex-direction: row;
                 justify-content: center;
                 background-color: #EAEAEA;
-                padding: 2rem 0rem;
+                padding: 2rem 10rem 2rem 0rem;
                 font-size: 2.5rem;
                 font-weight: 600;
                 color: #424141
@@ -63,7 +65,7 @@ $title-font: 'Shrikhand', cursive;
     align-content: center;
     font-family: $text-font;
     font-size: 2.5rem;
-    margin: 2rem 4rem 8rem 4rem;
+    margin: 0rem 4rem 8rem 4rem;
         
         
         &__byline  {
@@ -74,8 +76,8 @@ $title-font: 'Shrikhand', cursive;
         &__button  {
             border-radius: 5rem;
             border: none;
-            padding: 2rem 0rem;
-            margin: 0rem 11rem;
+            padding: 2rem 3rem;
+            margin: 0rem 9rem;
             color: white;
             background: linear-gradient(to bottom right, #e671da 0%, #aa5ddb 100%);
             @include button-shadow;
@@ -84,10 +86,11 @@ $title-font: 'Shrikhand', cursive;
 }
 .homepage-heading {
     @include heading-text;
-    margin: 0rem 1rem;
+    
         &--restaurants {
             background-color: $background-color;
             margin: 0rem;
+            padding-left: 3rem;
         }
 }
 /*instructions */
@@ -165,31 +168,35 @@ $title-font: 'Shrikhand', cursive;
     flex-direction: column;
     align-items: center;
     background-color: #f6f6f6;
-    padding: 1rem 0rem;
+    padding-bottom: 10rem;
 }
 .rest-prev { 
     position: relative;
     text-align: center;  
     font-family: $text-font;
     display: flex;
-    flex-flow: column wrap;
-    border: solid;
+    flex-direction: column;
+    border: none;
     width: 55rem;
     height: 40rem;
     border-radius: 1.5rem;
     overflow: hidden;
     @include button-shadow;
+    margin-bottom:3rem;
 
 
         &__img {
                 width: 900px;
-                height:435px;
-                
+                height: 435px;
+            &--shortened {
+                width: 900px;
+                height: 435px;
+            }
         
 
         }
         &__new-label {
-            font-size: 2rem;
+            font-size: 2.5rem;
             font-weight: bold;
             position: absolute;
             top: 8px;
@@ -198,9 +205,10 @@ $title-font: 'Shrikhand', cursive;
             background-color: #99E2D0;
             width: 13rem;
             height: 3rem;
-            padding: .5rem;
-            border-radius: 2rem;
-            padding-top: .5rem;
+            padding: 1rem;
+            border-radius: .5rem;
+            
+            text-align: center;
         }
         &__header {
             font-size: 3rem;
@@ -256,3 +264,4 @@ $title-font: 'Shrikhand', cursive;
     font-size: 3rem;
     margin: 3rem 0rem 3rem 4rem;
 }
+

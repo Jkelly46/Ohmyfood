@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/full-palette.scss"
+    ],
+    "names": [],
+    "file": "full-palette.min.css"
+}

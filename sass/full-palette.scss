@@ -1,0 +1,141 @@
+/*sass --watch ./sass/full-palette.scss:./css/full-palette.css*/
+
+$text-font: 'Roboto', sans-serif;
+$title-font: 'Shrikhand', cursive;
+$background-color: #f6f6f6;
+
+@mixin heading-text {
+    font-family: $text-font;
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin: 4rem 50rem 4rem 3rem;
+    padding-bottom: .5rem;
+    border-bottom: solid #99E2D0;
+    border-bottom-width: 8px;
+}
+@mixin button-shadow {
+    box-shadow: 2px 10px 19px 3px #cbcbcb;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+        &__logo {
+                width: 30rem;
+                height: 5rem;
+                margin-right: 15rem;
+                padding: 2rem 0rem 2rem 0rem;
+        }
+        &__return-arrow {
+            padding-left: 3rem;
+
+        }
+    }
+    .menu-image {
+        width: 62rem;
+        height: 39.53rem;
+        
+        
+    }
+
+.main {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 3rem;
+    background-color: $background-color;
+    margin: none;
+        
+}
+.restaurant-heading {
+    @include heading-text
+}
+span {padding-right:1rem;}
+
+.restaurant {
+    display: flex;
+    align-items: center;
+        &__name {
+            font-family: $title-font;
+            font-size: 4rem;
+            padding: 5rem 10rem 3rem 3rem;
+        }
+        &__heart-button {
+            fill: none;
+        }
+}
+.menu { 
+  @include button-shadow;
+  background-color: white;
+  border-radius: 3rem;
+  padding: 2rem 2rem 0rem 2rem;
+  margin: 1.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  font-family: $text-font;
+        &__item {
+            font-size: 3rem;
+            font-weight: bolder; 
+            padding-bottom: 1rem;
+            
+            
+        }
+        &__byline {
+            font-size: 2rem; 
+            font-weight: lighter;
+                &--price {
+                    font-weight: bolder;
+                    border:none;
+                    transform: translate(90%, -90%);
+                }
+        }
+
+    }
+.order-button {
+            border-radius: 5rem;
+            border: none;
+            padding: 2rem 8rem;
+            margin: 5rem 18rem;
+            margin-bottom: 7rem;
+            color: white;
+            background: linear-gradient(to bottom right, #e671da 0%, #aa5ddb 100%);
+            @include button-shadow;
+            font-family: $text-font;
+            text-align: center;
+            font-size: 2.5rem;
+
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    background-color: #332E2C;
+    font-size: 1rem;
+    padding-bottom: 5rem;
+    
+    .footer__item {
+        font-family: $text-font;
+        font-size:3rem;
+        margin: 1rem 4rem;
+    }        
+}
+.footer-icon {
+    padding-left: 0rem;
+}
+.i {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.logo {
+    font-family: $title-font;
+    font-size: 3rem;
+    margin: 3rem 0rem 3rem 4rem;
+}
+
+
