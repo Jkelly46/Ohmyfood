@@ -32,10 +32,14 @@ $background-color: #f6f6f6;
 
         }
     }
+
+
     .menu-image {
-        width: 62rem;
-        height: 39.53rem;
-    }
+    width: 62rem;
+    height: 39.53rem;
+    display: flex;
+    overflow: hidden;
+}
 
 .main {
     display: flex;
@@ -60,15 +64,39 @@ span {padding-right:1rem;}
 .restaurant {
     display: flex;
     align-items: center;
+    
         &__name {
             font-family: $title-font;
             font-size: 5rem;
             padding: 5rem 10rem 3rem 3rem;
         }
-        &__heart-button {
-            fill: none;
-        }
+        
+        
+
 }
+.fa-heart:hover {
+    background-color: linear-gradient(to bottom right, #e671da 0%, #aa5ddb 100%);
+}
+
+/*&:hover {
+    background-color: linear-gradient(to bottom right, #e671da 0%, #aa5ddb 100%);
+}*/
+
+        /*
+
+example transition        
+$cd-btn: #011c37;
+$cd-txt: #15DEA5;
+
+.btn {
+    
+    transition-property: transform;
+    transition-duration: 400ms;
+    &:hover {
+        transform: scale(1.15);
+    }
+}*/
+
 .menu { 
   @include button-shadow;
   background-color: white;

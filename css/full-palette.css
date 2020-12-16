@@ -17,6 +17,8 @@
 .menu-image {
   width: 62rem;
   height: 39.53rem;
+  display: flex;
+  overflow: hidden;
 }
 
 .main {
@@ -58,10 +60,28 @@ span {
   font-size: 5rem;
   padding: 5rem 10rem 3rem 3rem;
 }
-.restaurant__heart-button {
-  fill: none;
+
+.fa-heart:hover {
+  background-color: linear-gradient(to bottom right, #e671da 0%, #aa5ddb 100%);
 }
 
+/*&:hover {
+    background-color: linear-gradient(to bottom right, #e671da 0%, #aa5ddb 100%);
+}*/
+/*
+
+example transition        
+$cd-btn: #011c37;
+$cd-txt: #15DEA5;
+
+.btn {
+
+    transition-property: transform;
+    transition-duration: 400ms;
+    &:hover {
+        transform: scale(1.15);
+    }
+}*/
 .menu {
   box-shadow: 2px 10px 19px 3px #cbcbcb;
   background-color: white;
