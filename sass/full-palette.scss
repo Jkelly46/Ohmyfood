@@ -74,9 +74,11 @@ span {padding-right:1rem;}
         
 
 }
-.fa-heart:hover {
-    background-color: linear-gradient(to bottom right, #e671da 0%, #aa5ddb 100%);
-}
+
+    .fa-heart:hover {
+        background-color:linear-gradient(to bottom right, #e671da 0%, #aa5ddb 100%);
+    }
+    
 
 /*&:hover {
     background-color: linear-gradient(to bottom right, #e671da 0%, #aa5ddb 100%);
